@@ -1,0 +1,211 @@
+Match (n) Detach Delete(n);
+CREATE (Volkswagen:Manufacturer {"Name":"Volkswagen" , "Headquarters" :"Germany" , "Employees" :501956,"Factories":94 ,"Revenue":221.5 ,"Production": 8494280,"Sales":8361294  })
+Create (ModelA:Models{"Name":"Model A", "Descriptions":"This is of model a descritpion"})
+Create (ModelB:Models{"Name":"Model B", "Descriptions":"This is of model b descritpion"})
+Create (ModelC:Models{"Name":"Model C", "Descriptions":"This is of model c descritpion"})
+Create (SeatA:Seats{"Name":"Seat A", "Descriptions":"This is of Seat a descritpion"})
+Create (SeatB:Seats{"Name":"Seat B", "Descriptions":"This is of Seat b descritpion"})
+Create (SeatC:Seats{"Name":"Seat C", "Descriptions":"This is of Seat c descritpion"})
+Create (WheelA:Wheels{"Name":"Wheel A", "Descriptions":"This is of Wheel a descritpion"})
+Create (WheelB:Wheels{"Name":"Wheel B", "Descriptions":"This is of Wheel b descritpion"})
+Create (WheelC:Wheels{"Name":"Wheel C", "Descriptions":"This is of Wheel c descritpion"})
+Create (DriveTrainA:DriveTrains{"Name":"Drive Train A", "Descriptions":"This is of Drive Train a descritpion"})
+Create (DriveTrainB:DriveTrains{"Name":"Drive Train B", "Descriptions":"This is of Drive Train b descritpion"})
+Create (DriveTrainC:DriveTrains{"Name":"Drive Train C", "Descriptions":"This is of Drive Train c descritpion"})
+Create (MotorA:Motors{"Name":"Motor A", "Descriptions":"This is of Motor a descritpion"})
+Create (MotorB:Motors{"Name":"Motor B", "Descriptions":"This is of Motor b descritpion"})
+Create (MotorC:Motors{"Name":"Motor C", "Descriptions":"This is of Motor c descritpion"})
+Create (FrameA:Frames{"Name":"Frame A", "Descriptions":"This is of Frame a descritpion"})
+Create (FrameB:Frames{"Name":"Frame B", "Descriptions":"This is of Frame b descritpion"})
+Create (FrameC:Frames{"Name":"Frame C", "Descriptions":"This is of Frame c descritpion"})
+Create (ClothCoverA:ClothCovers{"Name":"Cloth Cover A", "Descriptions":"This is of Cloth Cover a descritpion"})
+Create (ClothCoverB:ClothCovers{"Name":"Cloth Cover B", "Descriptions":"This is of Cloth Cover b descritpion"})
+Create (ClothCoverC:ClothCovers{"Name":"Cloth Cover C", "Descriptions":"This is of Cloth Cover c descritpion"})
+Create (HubA:Hubs{"Name":"Hub A", "Descriptions":"This is of Hub a descritpion"})
+Create (HubB:Hubs{"Name":"Hub B", "Descriptions":"This is of Hub b descritpion"})
+Create (HubC:Hubs{"Name":"Hub C", "Descriptions":"This is of Hub c descritpion"})
+Create (TireA:Tires{"Name":"Tire A", "Descriptions":"This is of Tire a descritpion"})
+Create (TireB:Tires{"Name":"Tire B", "Descriptions":"This is of Tire b descritpion"})
+Create (TireC:Tires{"Name":"Tire C", "Descriptions":"This is of Tire c descritpion"})
+Create (EngineA:Engines{"Name":"Engine A", "Descriptions":"This is of Engine a descritpion"})
+Create (EngineB:Engines{"Name":"Engine B", "Descriptions":"This is of Engine b descritpion"})
+Create (EngineC:Engines{"Name":"Engine C", "Descriptions":"This is of Engine c descritpion"})
+Create (EngineD:Engines{"Name":"Engine D", "Descriptions":"This is of Engine c descritpion"})
+Create (GearBoxA:GearBoxs{"Name":"GearBox A", "Descriptions":"This is of GearBox a descritpion"})
+Create (GearBoxB:GearBoxs{"Name":"GearBox B", "Descriptions":"This is of GearBox b descritpion"})
+Create (GearBoxC:GearBoxs{"Name":"GearBox C", "Descriptions":"This is of GearBox c descritpion"})
+Create (GearBoxD:GearBoxs{"Name":"GearBox C", "Descriptions":"This is of GearBox c descritpion"})
+Create (SpringA:Springs{"Name":"Spring A", "Descriptions":"This is of Spring a descritpion"})
+Create (SpringB:Springs{"Name":"Spring B", "Descriptions":"This is of Spring b descritpion"})
+Create (SpringC:Springs{"Name":"Spring C", "Descriptions":"This is of Spring c descritpion"})
+Create (SteelBarA:SteelBars{"Name":"Steel Bar A", "Descriptions":"This is of Steel Bar a descritpion"})
+Create (SteelBarB:SteelBars{"Name":"Steel Bar B", "Descriptions":"This is of Steel Bar b descritpion"})
+Create (SteelBarC:SteelBars{"Name":"Steel Bar C", "Descriptions":"This is of Steel Bar c descritpion"})
+Create (CottonA:Cottons{"Name":"Cotton A", "Descriptions":"This is of Cotton a descritpion"})
+Create (CottonB:Cottons{"Name":"Cotton B", "Descriptions":"This is of Cotton b descritpion"})
+Create (CottonC:Cottons{"Name":"Cotton C", "Descriptions":"This is of Cotton c descritpion"})
+Create (ThreadA:Threads{"Name":"Thread A", "Descriptions":"This is of Thread a descritpion"})
+Create (ThreadB:Threads{"Name":"Thread B", "Descriptions":"This is of Thread b descritpion"})
+Create (ThreadC:Threads{"Name":"Thread C", "Descriptions":"This is of Thread c descritpion"})
+
+CREATE (CompanyA_Seats:Company {"Name":"Seat Company A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyB_Seats:Company {"Name":"Seat Company B" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyA_WhellAssemble:Company {"Name":"Company A, Whell Assemble" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyA_DriveTrain:Company {"Name":"Company A, Drive Train" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyA_MotorA:Company {"Name":"Company A, Motor A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyB_MotorB:Company {"Name":"Company B, Motor B" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyA_FrameAssemble:Company {"Name":"Company A, Frame Assemble" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyA_SpringA:Company {"Name":"Company A, Spring A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyB_SpringA:Company {"Name":"Company B, Spring A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyC_SpringA:Company {"Name":"Company C, Spring A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyA_SteelBarA:Company {"Name":"Company A, Steel Bar A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyB_SteelBarA:Company {"Name":"Company B, Steel Bar A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyC_SteelBarA:Company {"Name":"Company C, Steel Bar A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+Create (Agent1:Person{"Name":"Agent 1", "Descriptions":"This person is responsible to get steel bars and springs from three different companies"})
+
+CREATE (CompanyA_ClothA:Company {"Name":"Company A, Cloth A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyB_ClothB:Company {"Name":"Company B, Cloth A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyA_ThredsA:Company {"Name":"Company A, Treads A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyB_ThredsB:Company {"Name":"Company B, Treads B" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+Create (Agent2:Person{"Name":"Agent 2", "Descriptions":"This person is responsible to get Cloth and Treads from two different suppliers"})
+
+Create (Supplier1:Person{"Name":"Supplier 1", "Descriptions":"This person is responsible to get Cloth"})
+Create (Supplier2:Person{"Name":"Supplier 2", "Descriptions":"This person is responsible to get Treads"})
+
+CREATE (CompanyA_Hub:Company {"Name":"Company A, Hub A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyBC_Hub:Company {"Name":"Company B, Hub B and Hub C" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+
+CREATE (CompanyA_TireA:Company {"Name":"Company A, Tire A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyA_TireB:Company {"Name":"Company A, Tire B" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyA_TireC:Company {"Name":"Company A, Tire B" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyB_TireA:Company {"Name":"Company B, Tire A" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyB_TireB:Company {"Name":"Company B, Tire B" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyB_TireC:Company {"Name":"Company B, Tire C" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+CREATE (CompanyA_Engine:Company {"Name":"Company A, Engines " , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+CREATE (CompanyA_GearBox:Company {"Name":"Company A, Gear Box" , "Headquarters" :"Germany" , "Employees" :500,"Factories":20 ,"Revenue":221.5 ,"Production": 50000,"Sales":49800  })
+
+
+//Rel
+CREATE
+
+(ModelA)-{:Contains{type:"Model"}}->(Volkswagen),
+(ModelB)-{:Contains{type:"Model"}}->(Volkswagen),
+(ModelC)-{:Contains{type:"Model"}}->(Volkswagen),
+
+(SeatA)-{:Contains{type:"Seat"}}->(ModelA),
+(SeatB)-{:Contains{type:"Seat"}}->(ModelC),
+(SeatA)-{:Contains{type:"Seat"}}->(ModelB),
+
+(WheelB)-{:Contains{type:"Wheel"}}->(ModelA),
+(WheelB)-{:Contains{type:"Wheel"}}->(ModelB),
+(WheelB)-{:Contains{type:"Wheel"}}->(ModelC),
+
+(DriveTrainA)-{:Contains{type:"DriveTrain"}}->(ModelA),
+(DriveTrainB)-{:Contains{type:"DriveTrain"}}->(ModelB),
+(DriveTrainC)-{:Contains{type:"DriveTrain"}}->(ModelC),
+
+(MotorB)-{:Contains{type:"Motor"}}->(SeatA),
+(MotorA)-{:Contains{type:"Motor"}}->(SeatC),
+
+(FrameA)-{:Contains{type:"Frame"}}->(SeatA),
+(FrameA)-{:Contains{type:"Frame"}}->(SeatC),
+
+(ClothCovers)-{:Contains{type:"ClothCover"}}->(SeatA),
+(ClothCoverB)-{:Contains{type:"ClothCover"}}->(SeatC),
+(ClothCoverB)-{:Contains{type:"ClothCover"}}->(SeatA),
+
+(HubA)-{:Contains{type:"Hub"}}->(WheelB),
+(HubC)-{:Contains{type:"Hub"}}->(WheelB),
+
+(TireA)-{:Contains{type:"Tire"}}->(WheelB),
+(TireC)-{:Contains{type:"Tire"}}->(WheelB),
+(TireB)-{:Contains{type:"Tire"}}->(WheelB),
+
+(EngineD)-{:Contains{type:"Engine"}}->(DriveTrainA),
+(EngineA)-{:Contains{type:"Engine"}}->(DriveTrainC),
+(EngineB)-{:Contains{type:"Engine"}}->(DriveTrainB),
+
+(GearBoxD)-{:Contains{type:"GearBox"}}->(DriveTrainA),
+(GearBoxA)-{:Contains{type:"GearBox"}}->(DriveTrainC),
+(GearBoxB)-{:Contains{type:"GearBox"}}->(DriveTrainB),
+
+(SpringA)-{:Contains{type:"Spring"}}->(FrameA),
+
+(SteelBarA)-{:Contains{type:"SteelBar"}}->(FrameA),
+
+(CottonA)-{:Contains{type:"Cotton"}}->(ClothCovers),
+(CottonB)-{:Contains{type:"Cotton"}}->(ClothCoverB),
+
+(ThreadA)-{:Contains{type:"Thread"}}->(ClothCovers),
+(ThreadB)-{:Contains{type:"Thread"}}->(ClothCoverB),
+
+
+(CompanyA_Seats)-{:From{type:"Seat"}}->(Seats),
+(CompanyB_Seats)-{:From{type:"Seat"}}->(Seats),
+
+(CompanyA_WhellAssemble)-{:From{type:"Wheel"}}->(Wheels),
+
+(CompanyA_DriveTrain)-{:From{type:"DriveTrain"}}->(DriveTrains),
+
+(CompanyA_MotorA)-{:From{type:"Motor"}}->(MotorA),
+(CompanyB_MotorB)-{:From{type:"Motor"}}->(MotorB),
+
+(CompanyA_FrameAssemble)-{:From{type:"Frame"}}->(Frames),
+
+(Agent1)-{:From{type:"Spring"}}->(Springs),
+(Agent1)-{:From{type:"SteelBar"}}->(SteelBars),
+
+
+(CompanyA_SpringA)-{:From{type:"Spring"}}->(Agent1),
+(CompanyB_SpringA)-{:From{type:"Spring"}}->(Agent1),
+(CompanyC_SpringA)-{:From{type:"Spring"}}->(Agent1),
+
+(CompanyA_SteelBarA)-{:From{type:"SteelBar"}}->(Agent1),
+(CompanyB_SteelBarA)-{:From{type:"SteelBar"}}->(Agent1),
+(CompanyC_SteelBarA)-{:From{type:"SteelBar"}}->(Agent1),
+
+(Agent2)-{:From{type:"Cotton"}}->(Cottons),
+(Agent2)-{:From{type:"Thread"}}->(Threads),
+
+(Supplier1)-{:For{type:"Person"}}->(Agent2),
+(Supplier2)-{:For{type:"Person"}}->(Agent2),
+
+(CompanyA_ClothA)-{:From{type:"Cloth"}}->(Supplier1),
+(CompanyB_ClothB)-{:From{type:"Cloth"}}->(Supplier1),
+
+(CompanyA_ThredsA)-{:From{type:"Thread"}}->(Supplier2),
+(CompanyB_ThredsB)-{:From{type:"Thread"}}->(Supplier2),
+
+(CompanyA_Hub)-{:From{type:"Hub"}}->(HubA),
+(CompanyBC_Hub)-{:From{type:"Hub"}}->(HubB),
+(CompanyBC_Hub)-{:From{type:"Hub"}}->(HubC),
+
+(CompanyA_TireA)-{:From{type:"Tire"}}->(TireA),
+(CompanyA_TireB)-{:From{type:"Tire"}}->(TireB),
+(CompanyA_TireC)-{:From{type:"Tire"}}->(TireC),
+
+(CompanyB_TireA)-{:From{type:"Tire"}}->(TireA),
+(CompanyB_TireB)-{:From{type:"Tire"}}->(TireB),
+(CompanyB_TireC)-{:From{type:"Tire"}}->(TireC),
+
+(CompanyA_Engine)-{:From{type:"Engine"}}->(Engines),
+(CompanyA_GearBox)-{:From{type:"GearBox"}}->(GearBoxs),
+
+(CompanyA_Engine)-{:From{type:"Hub"}}->(HubA),
+(CompanyA_GearBox)-{:From{type:"Hub"}}->(HubA)
+
+
+
+

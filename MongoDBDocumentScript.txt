@@ -1,0 +1,743 @@
+{
+	"Manufacturer_id": 1,
+	"Manufacturer": "Volkswagen",
+	"Volkswagen": {	
+					"Name":"Volkswagen" , 
+					"Headquarters":"Germany" , 
+					"Employees":501956,
+					"Factories":94 ,
+					"Revenue":221.5 ,
+					"Production": 8494280,
+					"Sales":8361294	
+					
+				},
+	"Models": {
+				"ModelA":{	
+						"Name":"Model A",
+						"Descriptions":"This is of model a descritpion",
+						"Model_id" : 1
+					},
+				"ModelB":{
+						"Name":"Model B", 
+						"Descriptions":"This is of model b descritpion",
+						"Model_id" : 2
+					},
+				"ModelC":{
+						"Name":"Model C", 
+						"Descriptions":"This is of model c descritpion",
+						"Model_id" : 3
+					}
+				},
+	
+	"Seats": {
+			"SeatA":{
+					"Name":"Seat A", 
+					"Descriptions":"This is of Seat a descritpion",
+					"Seat_id" : 1
+				},
+			"SeatB":{	
+					"Name":"Seat B", 
+					"Descriptions":"This is of Seat b descritpion",
+					"Seat_id" : 2					
+				},
+			"SeatC":{
+					"Name":"Seat C", 
+					"Descriptions":"This is of Seat c descritpion",
+					"Seat_id" : 3
+				}
+			},
+	"Wheels": {
+				"WheelA":{
+						"Name":"Wheel A",
+						"Descriptions":"This is of Wheel a descritpion",
+						"Wheel_id" : 1
+					},
+				"WheelB":{
+						"Name":"Wheel B",
+						"Descriptions":"This is of Wheel b descritpion",
+						"Wheel_id" : 2
+					},
+				"WheelC":{
+						"Name":"Wheel C", 
+						"Descriptions":"This is of Wheel c descritpion",
+						"Wheel_id" : 3
+					}
+			},
+	"DriveTrains": { 
+					"DriveTrainA": {
+								"Name":"Drive Train A", 
+								"Descriptions":"This is of Drive Train a descritpion",
+								"DriveTrain_id" : 1
+							},
+					"DriveTrainB": {
+								"Name":"Drive Train B",
+								"Descriptions":"This is of Drive Train b descritpion",
+								"DriveTrain_id" : 2
+							},
+					"DriveTrainC": {
+								"Name":"Drive Train C", 
+								"Descriptions":"This is of Drive Train c descritpion",
+								"DriveTrain_id" : 3
+							}
+				},
+	"Motors": {
+				"MotorA":{ 
+						"Name":"Motor A", 
+						"Descriptions":"This is of Motor a descritpion",
+						"Motor_id" : 1
+					},
+				"MotorB":{ 
+						"Name":"Motor B", 
+						"Descriptions":"This is of Motor b descritpion",
+						"Motor_id" : 2
+					},
+				"MotorC":{
+						"Name":"Motor C", 
+						"Descriptions":"This is of Motor c descritpion",
+						"Motor_id" : 3
+					}				
+			},
+	"Frames": {
+			"FrameA":{
+					"Name":"Frame A", 
+					"Descriptions":"This is of Frame a descritpion",
+					"Frame_id" : 1
+				},
+			"FrameB":{
+					"Name":"Frame B", 
+					"Descriptions":"This is of Frame b descritpion",
+					"Frame_id" : 2
+				},
+			"FrameC":{
+					"Name":"Frame C", 
+					"Descriptions":"This is of Frame c descritpion",
+					"Frame_id" : 3
+				}
+			},
+	"ClothCovers": {
+				"ClothCoverA": {
+						"Name":"Cloth Cover A",
+						"Descriptions":"This is of Cloth Cover a descritpion",
+						"ClothCover_id" : 1
+					},
+				"ClothCoverB":{
+						"Name":"Cloth Cover B",
+						"Descriptions":"This is of Cloth Cover b descritpion",
+						"ClothCover_id" : 2
+					},
+				"ClothCoverC": {
+						"Name":"Cloth Cover C", 
+						"Descriptions":"This is of Cloth Cover c descritpion",
+						"ClothCover_id" : 3
+					}					
+			},		
+	"Hubs": {
+			"HubA": {
+					"Name":"Hub A", 
+					"Descriptions":"This is of Hub a descritpion",
+					"Hub_id" : 1
+				},
+			"HubB": {
+					"Name":"Hub B", 
+					"Descriptions":"This is of Hub b descritpion",
+					"Hub_id" : 2
+				},
+			"HubC": {
+					"Name":"Hub C", 
+					"Descriptions":"This is of Hub c descritpion",
+					"Hub_id" : 3
+				}
+			},
+	"Tires": {
+			"TireA": {
+					"Name":"Tire A", 
+					"Descriptions":"This is of Tire a descritpion",
+					"Tire_id" : 1
+				},
+			"TireB": {
+					"Name":"Tire B", 
+					"Descriptions":"This is of Tire b descritpion",
+					"Tire_id" : 2
+				},
+			"TireC":{
+					"Name":"Tire C",
+					"Descriptions":"This is of Tire c descritpion",
+					"Tire_id" : 3
+				}
+			},
+	"Engines": {
+				"EngineA": {
+						"Name":"Engine A", 
+						"Descriptions":"This is of Engine a descritpion",
+						"Engine_id" : 1
+					},
+				"EngineB": {	
+						"Name":"Engine B", 
+						"Descriptions":"This is of Engine b descritpion",
+						"Engine_id" : 2
+					},
+				"EngineC": {
+						"Name":"Engine C", 
+						"Descriptions":"This is of Engine c descritpion",
+						"Engine_id" : 3
+					},
+				"EngineD": {
+						"Name":"Engine D", 
+						"Descriptions":"This is of Engine c descritpion",
+						"Engine_id" : 4
+					}
+			},
+	"GearBoxs": {	
+				"GearBoxA": {
+						"Name":"GearBox A", 
+						"Descriptions":"This is of GearBox a descritpion",
+						"GearBox_id" : 1
+					},
+				"GearBoxB": {
+						"Name":"GearBox B", 
+						"Descriptions":"This is of GearBox b descritpion",
+						"GearBox_id" : 2
+					},
+				"GearBoxC": {
+						"Name":"GearBox C", 
+						"Descriptions":"This is of GearBox c descritpion",
+						"GearBox_id" : 3
+					},
+				"GearBoxD": {
+						"Name":"GearBox C", 
+						"Descriptions":"This is of GearBox c descritpion",
+						"GearBox_id" : 4
+					}
+	"Springs": {
+				"SpringA": {
+						"Name":"Spring A", 
+						"Descriptions":"This is of Spring a descritpion",
+						"Spring_id" : 1
+					},
+				"SpringB": {
+						"Name":"Spring B", 
+						"Descriptions":"This is of Spring b descritpion",
+						"Spring_id" : 2
+					},
+				"SpringC": {
+						"Name":"Spring C", 
+						"Descriptions":"This is of Spring c descritpion",
+						"Spring_id" : 3
+					}
+			},
+	"SteelBars": {
+				"SteelBarA": {
+						"Name":"Steel Bar A", 
+						"Descriptions":"This is of Steel Bar a descritpion",
+						"SteelBar_id" : 1
+					},
+				"SteelBarB": { 
+						"Name":"Steel Bar B", 
+						"Descriptions":"This is of Steel Bar b descritpion",
+						"SteelBar_id" : 2
+					},
+				"SteelBarC": { 
+						"Name":"Steel Bar C", 
+						"Descriptions":"This is of Steel Bar c descritpion",
+						"SteelBar_id" : 3
+					}
+			},
+	"Cottons": { 
+				"CottonA:"{ 
+						"Name":"Cotton A", 
+						"Descriptions":"This is of Cotton a descritpion",
+						"Cotton_id" : 1
+					},
+				"CottonB": {
+						"Name":"Cotton B", 
+						"Descriptions":"This is of Cotton b descritpion",
+						"Cotton_id" : 2
+					},
+				"CottonC": {
+						"Name":"Cotton C", 
+						"Descriptions":"This is of Cotton c descritpion",
+						"Cotton_id" : 3
+					}
+			},
+	"Threads": { 
+			"ThreadA": { 
+					"Name":"Thread A", 
+					"Descriptions":"This is of Thread a descritpion",
+					"Thread_id" : 1
+				},
+			"ThreadB": {
+					"Name":"Thread B", 
+					"Descriptions":"This is of Thread b descritpion",
+					"Thread_id" : 2
+				}, 
+			"ThreadC": { 
+					"Name":"Thread C", 
+					"Descriptions":"This is of Thread c descritpion",
+					"Thread_id" : 3
+				}
+			},
+	
+	"Company": { 
+			"CompanyA_Seats": { 
+					"Name":"Seat Company A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Model_id" : 1,
+					"Model_id" : 3,
+					"Products" : {
+						{
+							"Name" : "Seat A",
+							"Seat_id" : 1
+						},
+						{
+							"Name" : "Seat B",
+							"Seat_id" : 2
+						},
+						{
+							"Name" : "Seat C",
+							"Seat_id" : 3
+						}
+					}	  			
+				},
+			"CompanyB_Seats": { 
+					"Name":"Seat Company B" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Model_id" : 3,
+					"Products" : {
+						{
+							"Name" : "Seat A",
+							"Seat_id" : 1
+						},
+						{
+							"Name" : "Seat B",
+							"Seat_id" : 2
+						},
+						{
+							"Name" : "Seat C",
+							"Seat_id" : 3
+						}
+					}	  
+				},
+			"CompanyA_WheelAssemble": {
+					"Name":"Company A, Wheel Assemble" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Products" : {
+						{
+							"Name" : "Wheel A",
+							"Wheel_id" : 1
+						},
+						{
+							"Name" : "Wheel B",
+							"Wheel_id" : 2,
+							"Model_id" : 1,
+							"Model_id" : 2,
+							"Model_id" : 3
+						},
+						{
+							"Name" : "Wheel C",
+							"Wheel_id" : 3
+						}
+					}   
+				},
+			"CompanyA_DriveTrain": {
+					"Name":"Company A, Drive Train" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Products" : {
+						{
+							"Name" : "Drive Train A",
+							"DriveTrain_id" : 1,
+							"Model_id" : 1
+						},
+						{
+							"Name" : "Drive Train B",
+							"DriveTrain_id" : 2,
+							"Model_id" : 2
+						},
+						{
+							"Name" : "Drive Train C",
+							"DriveTrain_id" : 3,
+							"Model_id" : 3
+						}
+					} 
+				},
+			"CompanyA_MotorA": { 
+					"Name":"Company A, Motor A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Seat_id" : 3,
+					"Model_id" : 1
+				},
+			"CompanyB_MotorB": { 
+					"Name":"Company B, otor B" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Seat_id" : 1,
+					"Model_id" : 2 
+				},
+			"CompanyA_FrameAssemble": {
+					"Name":"Company A, Frame Assemble" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Seat_id" : 3,
+					"Seat_id" : 1,
+					"Products" : {
+						{
+							"Name" : "Frame A",
+							"Frame_id" : 1
+						},
+						{
+							"Name" : "Frame B",
+							"Frame_id" : 2
+						},
+						{
+							"Name" : "Frame C",
+							"Frame_id" : 3
+						}
+					}    
+				},
+			"CompanyA_SpringA": { 
+					"Name":"Company A, Spring A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Frame_id" : 1,
+					"Agent_id" : 1					
+				},
+			"CompanyB_SpringA": {
+					"Name":"Company B, Spring A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Frame_id" : 1,
+					"Agent_id" : 1 
+				},
+			"CompanyC_SpringA": { 
+					"Name":"Company C, Spring A" , 
+					"Headquarters" :"Germany" ,
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Agent_id" : 1  
+				},
+			"CompanyA_SteelBarA": { 
+					"Name":"Company A, Steel Bar A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Frame_id" : 1,
+					"Agent_id" : 1  
+				},
+			"CompanyB_SteelBarA": {
+					"Name":"Company B, Steel Bar A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Frame_id" : 1,
+					"Agent_id" : 1  
+				},
+			"CompanyC_SteelBarA": {
+					"Name":"Company C, Steel Bar A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Frame_id" : 1,
+					"Agent_id" : 1  
+				},
+			"CompanyA_ClothA": {
+					"Name":"Company A, Cloth A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Seat_id" : 1,
+					"Cotton_id" : 1,
+					"Thread_id" : 1,
+					"Supplier_id" : 1  
+				},
+			"CompanyB_ClothB": {
+					"Name":"Company B, Cloth A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800
+					"Seat_id" : 3,
+					"Seat_id" : 1,
+					"Cotton_id" : 2,
+					"Thread_id" : 2 ,
+					"Supplier_id" : 1    
+				},
+			"CompanyA_ThredsA": {
+					"Name":"Company A, Treads A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Supplier_id" : 2  
+				},
+			"CompanyB_ThredsB": { 
+					"Name":"Company B, Treads B" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Supplier_id" : 2   
+				},
+			"CompanyA_Hub": {
+					"Name":"Company A, Hub A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Wheel_id" : 2,
+					"Hub_id": 1
+				},
+			"CompanyBC_Hub": {
+					"Name":"Company B, Hub B and Hub C" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Wheel_id" : 2,
+					"Products" : {
+						{
+							"Name" : "Hub B",
+							"Hub_id" : 2
+						},
+						{
+							"Name" : "Hub C",
+							"Hub_id" : 3
+						}
+					}    
+				},
+			"CompanyA_TireA": {
+					"Name":"Company A, Tire A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Wheel_id" : 2,
+					"Tire_id" : 1
+				},
+			"CompanyA_TireB": {
+					"Name":"Company A, Tire B" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Wheel_id" : 2,
+					"Tire_id" : 2  
+				},
+			"CompanyA_TireC": { 
+					"Name":"Company A, Tire B" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Wheel_id" : 2,
+					"Tire_id" : 3  
+				},
+			"CompanyB_TireA": {
+					"Name":"Company B, Tire A" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Tire_id" : 1  
+				},
+			"CompanyB_TireB": {
+					"Name":"Company B, Tire B" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Tire_id" : 2    
+				},
+			"CompanyB_TireC": {
+					"Name":"Company B, Tire C" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Tire_id" : 3    
+				},
+			"CompanyA_Engine": {
+					"Name":"Company A, Engines " , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Products" : {
+						{
+							"Name" : "Engine A",
+							"Engine_id" : 1,
+							"DriveTrain_id" : 3,							
+							"Hub_id" : 1
+						},
+						{
+							"Name" : "Engine B",
+							"Engine_id" : 2,
+							"DriveTrain_id" : 2,							
+							"Hub_id" : 1
+						},
+						{
+							"Name" : "Engine C",
+							"Engine_id" : 3,							
+							"Hub_id" : 1
+						},
+						{
+							"Name" : "Engine D",
+							"Engine_id" : 4,
+							"DriveTrain_id" : 1,							
+							"Hub_id" : 1
+						}
+					}					
+					
+				},
+			"CompanyA_GearBox": { 
+					"Name":"Company A, Gear Box" , 
+					"Headquarters" :"Germany" , 
+					"Employees" :500,
+					"Factories":20 ,
+					"Revenue":221.5 ,
+					"Production": 50000,
+					"Sales":49800,
+					"Products" : {
+						{
+							"Name" : "Gear Box A",
+							"GearBox_id" : 1,
+							"DriveTrain_id" : 3,							
+							"Hub_id" : 1
+						},
+						{
+							"Name" : "Gear Box B",
+							"GearBox_id" : 2,
+							"DriveTrain_id" : 2,							
+							"Hub_id" : 1
+						},
+						{
+							"Name" : "Gear Box C",
+							"GearBox_id" : 3,							
+							"Hub_id" : 1
+						},
+						{
+							"Name" : "Gear Box D",
+							"GearBox_id" : 4,
+							"DriveTrain_id" : 1,							
+							"Hub_id" : 1
+						}
+					}  
+				}
+					
+			},
+	"Person": { 
+			"Agent1": { 
+					"Name":"Agent 1", 
+					"Descriptions":"This person is responsible to get steel bars and springs from three different companies",
+					"Agent_id" : 1,
+					"Spring_id" : 1,
+					"Spring_id" : 2,
+					"Spring_id" : 3,
+					"SteelBar_id" : 1,
+					"SteelBar_id" : 2,
+					"SteelBar_id" : 3
+				},
+			"Agent2": {
+					"Name":"Agent 2", 
+					"Descriptions":"This person is responsible to get Cloth and Treads from two different suppliers",
+					"Agent_id" : 2,
+					"Cotton_id" : 1,
+					"Cotton_id" : 2,
+					"Cotton_id" : 3,
+					"Thread_id" : 1,
+					"Thread_id" : 2,
+					"Thread_id" : 3
+				},
+			"Supplier1": { 
+					"Name":"Supplier 1", 
+					"Descriptions":"This person is responsible to get Cloth",
+					"Supplier_id" : 1,
+					"Agent_id" : 2
+				},
+			"Supplier2": {
+					"Name":"Supplier 2", 
+					"Descriptions":"This person is responsible to get Treads"
+					"Supplier_id" : 2,
+					"Agent_id" : 2
+				}
+			},
+}
+

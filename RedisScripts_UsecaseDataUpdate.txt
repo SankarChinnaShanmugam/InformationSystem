@@ -1,0 +1,377 @@
+select 0
+flushdb
+dbsize
+
+MULTI
+HMSET Manufacturer:Volkswagen name "Volkswagen" "Headquarters" "Germany" "Employees" 501956 "Factories" 94 "Revenue" 221.5 "Production" 8494280 "Sales" 8361294
+ZADD Type "1" "Manufacturer:Volkswagen"
+ZADD Sales_Count 8361294 Manufacturer:Volkswagen
+EXEC
+HGETALL Manufacturer Volkswagen
+ZRANGEBYSCORE "Sales"_count 0 9999999
+keys Manufacturer*
+
+MULTI
+HMSET Models:ModelA name "Model A" "Descriptions" "This is of model a descritpion" 
+ZADD Type "1" "Models:ModelA"
+EXEC
+MULTI
+HMSET Models:ModelB name "Model B" "Descriptions" "This is of model b descritpion" 
+ZADD Type "2" "Models:ModelB"
+EXEC
+MULTI
+HMSET Models:ModelC name "Model C" "Descriptions" "This is of model c descritpion"
+ZADD Type "3" "Models:ModelC"
+EXEC 
+ZRANGE Type 0 -1 WITHSCORES
+
+
+
+MULTI
+HMSET SeatA:Seats name "Seat A"  "Descriptions" "This is of Seat a descritpion" 
+ZADD Type "1" "SeatA:Seats"
+EXEC
+MULTI
+HMSET SeatB:Seats name "Seat B"  "Descriptions" "This is of Seat b descritpion" 
+ZADD Type "2" "SeatB:Seats"
+EXEC
+MULTI
+HMSET SeatC:Seats name "Seat C"  "Descriptions" "This is of Seat c descritpion" 
+ZADD Type "3" "SeatC:Seats"
+EXEC
+
+keys *Seats
+
+MULTI
+HMSET WheelA:Wheels name "Wheel A"  "Descriptions" "This is of Wheel a descritpion" 
+ZADD Type "1" "WheelA:Wheels"
+EXEC
+MULTI
+HMSET WheelB:Wheels name "Wheel B"  "Descriptions" "This is of Wheel b descritpion"
+ZADD Type "2" "WheelB:Wheels"
+EXEC
+MULTI 
+HMSET WheelC:Wheels name "Wheel C"  "Descriptions" "This is of Wheel c descritpion" 
+ZADD Type "3" "WheelC:Wheels"
+EXEC
+
+keys *Wheels
+
+MULTI
+HMSET DriveTrainA:DriveTrains name "Drive Train A"  "Descriptions" "This is of Drive Train a descritpion" 
+ZADD Type "1" "DriveTrainA:DriveTrains"
+EXEC
+MULTI
+HMSET DriveTrainB:DriveTrains name "Drive Train B"  "Descriptions" "This is of Drive Train b descritpion" 
+ZADD Type "2" "DriveTrainB:DriveTrains"
+EXEC
+MULTI
+HMSET DriveTrainC:DriveTrains name "Drive Train C"  "Descriptions" "This is of Drive Train c descritpion" 
+ZADD Type "3" "DriveTrainC:DriveTrains"
+EXEC
+
+keys Drive*
+
+MULTI
+HMSET MotorA:Motors name "Motor A"  "Descriptions" "This is of Motor a descritpion" 
+ZADD Type "1" "MotorA:Motors"
+EXEC
+MULTI
+HMSET MotorB:Motors name "Motor B"  "Descriptions" "This is of Motor b descritpion" 
+ZADD Type "2" "MotorB:Motors"
+EXEC
+MULTI
+HMSET MotorC:Motors name "Motor C"  "Descriptions" "This is of Motor c descritpion" 
+ZADD Type "3" "MotorC:Motors"
+EXEC
+keys Moto*
+
+MULTI
+HMSET FrameA:Frames name "Frame A"  "Descriptions" "This is of Frame a descritpion" 
+ZADD Type "1" "FrameA:Frames"
+EXEC
+MULTI
+HMSET FrameB:Frames name "Frame B"  "Descriptions" "This is of Frame b descritpion" 
+ZADD Type "2" "FrameB:Frames"
+EXEC
+MULTI
+HMSET FrameC:Frames name "Frame C"  "Descriptions" "This is of Frame c descritpion" 
+ZADD Type "3" "FrameC:Frames"
+EXEC
+keys Fram*
+
+MULTI
+HMSET ClothCoverA:ClothCovers name "Cloth Cover A"  "Descriptions" "This is of Cloth Cover a descritpion" 
+ZADD Type "1" "ClothCoverA:ClothCovers"
+EXEC
+MULTI
+HMSET ClothCoverB:ClothCovers name "Cloth Cover B"  "Descriptions" "This is of Cloth Cover b descritpion" 
+ZADD Type "2" "ClothCoverB:ClothCovers"
+EXEC
+MULTI
+HMSET ClothCoverC:ClothCovers name "Cloth Cover C"  "Descriptions" "This is of Cloth Cover c descritpion" 
+ZADD Type "3" "ClothCoverC:ClothCovers"
+EXEC
+keys Clo*
+ 
+MULTI
+HMSET HubA:Hubs name "Hub A"  "Descriptions" "This is of Hub a descritpion" 
+ZADD Type "1" "HubA:Hubs"
+EXEC
+MULTI
+HMSET HubB:Hubs name "Hub B"  "Descriptions" "This is of Hub b descritpion" 
+ZADD Type "2" "HubB:Hubs"
+EXEC
+MULTI
+HMSET HubC:Hubs name "Hub C"  "Descriptions" "This is of Hub c descritpion" 
+ZADD Type "3" "HubC:Hubs"
+EXEC
+keys Hu*
+ 
+MULTI
+HMSET TireA:Tires name "Tire A"  "Descriptions" "This is of Tire a descritpion" 
+ZADD Type "1" "TireA:Tires"
+EXEC
+MULTI
+HMSET TireB:Tires name "Tire B"  "Descriptions" "This is of Tire b descritpion" 
+ZADD Type "2" "TireB:Tires"
+EXEC
+MULTI
+HMSET TireC:Tires name "Tire C"  "Descriptions" "This is of Tire c descritpion" 
+ZADD Type "3" "TireC:Tires"
+EXEC
+keys Ti*
+
+MULTI
+HMSET EngineA:Engines name "Engine A"  "Descriptions" "This is of Engine a descritpion" 
+ZADD Type "1" "EngineA:Engines"
+EXEC
+MULTI
+HMSET EngineB:Engines name "Engine B"  "Descriptions" "This is of Engine b descritpion" 
+ZADD Type "2" "EngineB:Engines"
+EXEC
+MULTI
+HMSET EngineC:Engines name "Engine C"  "Descriptions" "This is of Engine c descritpion" 
+ZADD Type "3" "EngineC:Engines"
+EXEC
+MULTI
+HMSET EngineD:Engines name "Engine D"  "Descriptions" "This is of Engine c descritpion" 
+ZADD Type "4" "EngineD:Engines"
+EXEC
+keys Eng*
+
+MULTI
+HMSET GearBoxA:GearBoxs name "GearBox A"  "Descriptions" "This is of GearBox a descritpion" 
+ZADD Type "1" "GearBoxA:GearBoxs"
+EXEC
+MULTI
+HMSET GearBoxB:GearBoxs name "GearBox B"  "Descriptions" "This is of GearBox b descritpion" 
+ZADD Type "2" "GearBoxB:GearBoxs"
+EXEC
+MULTI
+HMSET GearBoxC:GearBoxs name "GearBox C"  "Descriptions" "This is of GearBox c descritpion" 
+ZADD Type "3" "GearBoxC:GearBoxs"
+EXEC
+MULTI
+HMSET GearBoxD:GearBoxs name "GearBox D"  "Descriptions" "This is of GearBox D descritpion" 
+ZADD Type "4" "GearBoxD:GearBoxs"
+EXEC
+keys Ge*
+
+MULTI
+HMSET SpringA:Springs name "Spring A"  "Descriptions" "This is of Spring a descritpion" 
+ZADD Type "1" "SpringA:Springs"
+EXEC
+MULTI
+HMSET SpringB:Springs name "Spring B"  "Descriptions" "This is of Spring b descritpion" 
+ZADD Type "2" "SpringB:Springs"
+EXEC
+MULTI
+HMSET SpringC:Springs name "Spring C"  "Descriptions" "This is of Spring c descritpion" 
+ZADD Type "3" "SpringC:Springs"
+EXEC
+keys Sp*
+
+MULTI
+HMSET SteelBarA:SteelBars name "Steel Bar A"  "Descriptions" "This is of Steel Bar a descritpion" 
+ZADD Type "1" "SteelBarA:SteelBars"
+EXEC
+MULTI
+HMSET SteelBarB:SteelBars name "Steel Bar B"  "Descriptions" "This is of Steel Bar b descritpion" 
+ZADD Type "2" "SteelBarB:SteelBars"
+EXEC
+MULTI
+HMSET SteelBarC:SteelBars name "Steel Bar C"  "Descriptions" "This is of Steel Bar c descritpion" 
+ZADD Type "3" "SteelBarC:SteelBars"
+EXEC
+keys St*
+
+MULTI
+HMSET CottonA:Cottons name "Cotton A"  "Descriptions" "This is of Cotton a descritpion" 
+ZADD Type "1" "CottonA:Cottons"
+EXEC
+MULTI
+HMSET CottonB:Cottons name "Cotton B"  "Descriptions" "This is of Cotton b descritpion" 
+ZADD Type "2" "CottonB:Cottons"
+EXEC
+MULTI
+HMSET CottonC:Cottons name "Cotton C"  "Descriptions" "This is of Cotton c descritpion" 
+ZADD Type "3" "CottonC:Cottons"
+EXEC
+keys Cot*
+
+MULTI
+HMSET ThreadA:Threads name "Thread A"  "Descriptions" "This is of Thread a descritpion" 
+ZADD Type "1" "ThreadA:Threads"
+EXEC
+MULTI
+HMSET ThreadB:Threads name "Thread B"  "Descriptions" "This is of Thread b descritpion" 
+ZADD Type "2" "ThreadB:Threads"
+EXEC
+MULTI
+HMSET ThreadC:Threads name "Thread C"  "Descriptions" "This is of Thread c descritpion" 
+ZADD Type "3" "ThreadC:Threads"
+EXEC
+keys Thr*
+
+MULTI
+HMSET CompanyA_Seats:Company  name "GROCLIN S.A." product "Seat_A" headquarters "Poland" employees 500 factories 20 revenue 221.5 production 500 sales 49800 Address "Słowiańska 462-065 Grodzisk Wielkopolski" Type "Manufacturer" Code "M0001"   
+ZADD Type "1" "CompanyA_Seats:Company"
+EXEC
+MULTI
+HMSET CompanyB_Seats:Company  name "SIBECO - passive security systems" product "Seat_B" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "Vegetable department 623700 Berezovsky" Type "Manufacturer" Code "M0002"    
+ZADD Type "2" "CompanyB_Seats:Company"
+EXEC
+keys *Se*
+
+MULTI
+HMSET CompanyA_WheelAssemble:Company  name "Company A, Wheel Assemble" Product "Wheel_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "85614 Kirchseeon, Germany" Type "Manufacturer"  Code "M0004"     
+ZADD Type "1" "CompanyA_WheelAssemble:Company"
+EXEC
+
+MULTI
+HMSET CompanyA_DriveTrain:Company  name "Andreas Schlöffel GmbH" Product "Drive_Train_A" headquarters "Germany" employees 1360 factories 21 revenue 2111.5 production 5000 sales 49800 Address "85414 Kirchseeon, Germany" Type "Manufacturer" Code "M0003"     
+ZADD Type "1" "CompanyA_DriveTrain:Company"
+EXEC
+
+MULTI
+HMSET CompanyA_MotorA:Company  name "ATZ-Moers GmbH" Product "Motar_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "47441 Moers, Germany" Type "Manufacturer" Code "M0005"    
+ZADD Type "1" "CompanyA_MotorA:Company"
+EXEC
+HMSET CompanyB_MotorB:Company  name "Autohaus Dengler GmbH & Co. KG" Product "Motor_B" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "47441 Moers, Germany" Type "Manufacturer" Code "M0006"  
+ZADD Type "2" "CompanyB_MotorB:Company"
+EXEC
+
+MULTI
+HMSET CompanyA_FrameAssemble:Company  name "Autohaus Krause & Sohn GmbH" Product "Frame_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "47441 Moers, Germany" Type "Manufacturer" Code "M0007"    
+ZADD Type "1" "CompanyA_FrameAssemble:Company"
+EXEC
+
+MULTI
+HMSET CompanyA_SpringA:Company  name "Gutekunst + Co.KG" Product "Spring_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "72555 Metzingen, Germany" Type "Manufacturer" Code "M0008"    
+ZADD Type "1" "CompanyA_SpringA:Company"
+EXEC
+MULTI
+HMSET CompanyB_SpringA:Company  name "Achenbach Federn" Product "Spring_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "57319 Bad Berleburg, Germany" Type "Manufacturer" Code "M0009"    
+ZADD Type "2" "CompanyB_SpringA:Company"
+EXEC
+MULTI
+HMSET CompanyC_SpringA:Company  name "Bischoff Federnwerk und Nutzfahrzeugteile GmbH" Product "Spring_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "39418 Stassfurt, Germany", Type "Manufacturer" Code "M0010"     
+ZADD Type "3" "CompanyC_SpringA:Company"
+EXEC
+
+MULTI
+HMSET CompanyA_SteelBarA:Company name "Hoselmann Stahl GmbH Handel & Anarbeitung" Product "Steelbar_A" headquarters "Germany"  employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "30175 Hanover, Germany" Type "Manufacturer"  Code "M0011" 
+ZADD Type "1" "CompanyA_SteelBarA:Company"
+EXEC
+MULTI
+HMSET CompanyB_SteelBarA:Company  name "KIESELMANN GmbH" Product "Steelbar_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "75438 Knittlingen, Germany" Type "Manufacturer" Code "M0012"     
+ZADD Type "2" "CompanyB_SteelBarA:Company"
+EXEC
+MULTI
+HMSET CompanyC_SteelBarA:Company  name "Sprint Metal Edelstahlziehereien GmbH" Product "Steelbar_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "51580 Hemer, Germany" Type "Manufacturer"  Code "M0013"    
+ZADD Type "3" "CompanyC_SteelBarA:Company"
+EXEC
+
+MULTI
+HMSET Agent1_Person name "Agent 1"  "Descriptions" "This person is responsible to get steel bars and springs from three different companies" 
+ZADD Type "1" "Agent1:Person"
+EXEC
+
+MULTI
+HMSET CompanyA_ClothA:Company  name "Spremberger Tuche GmbH Verein: Lebens-Stoffe e.V." Product "Cloth_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "03130 Spremberg, Germany" Type "Manufacturer" Code "M0014"    
+ZADD Type "1" "CompanyA_ClothA:Company"
+EXEC
+MULTI
+HMSET CompanyB_ClothB:Company  name "alfatex Stoffmarkt GmbH & Co. Stoffhaus am KÖ KG" Product "Cloth_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "34233 Fuldatal / Ihringshausen, Germany"  Type "Manufacturer" Code "M0015"    
+ZADD Type "2" "CompanyB_ClothB:Company"
+EXEC
+
+MULTI
+HMSET CompanyA_ThredsA:Company  name "BWZ Baumwollweberei Zittau GmbH" Product "Thread_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "02763 Zittau, Germany" Type "Manufacturer" Code "M0016"   
+ZADD Type "1" "CompanyA_ThredsA:Company"
+EXEC
+MULTI
+HMSET CompanyB_ThredsB:Company  name "Christel Killian" Product "Thread_B" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "66265 Heusweiler, Germany" Type "Manufacturer" Code "M0017"  
+ZADD Type "2" "CompanyB_ThredsB:Company"
+EXEC
+keys Co*
+
+MULTI
+HMSET Agent2:Person name "Agent 2"  "Descriptions" "This person is responsible to get Cloth and Treads from two different suppliers" 
+ZADD Type "2" "Agent2:Person"
+EXEC
+MULTI
+HMSET Supplier1:Person name "Supplier 1"  "Descriptions" "This person is responsible to get Cloth" 
+ZADD Type "1" "Supplier1:Person"
+EXEC
+MULTI
+HMSET Supplier2:Person name "Supplier 2"  "Descriptions" "This person is responsible to get Treads" 
+ZADD Type "2" "Supplier2:Person"
+EXEC
+keys *Person
+
+MULTI
+HMSET CompanyA_Hub:Company  name "H. & F. Nieper GmbH & Co" Product "Hub_A" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "42699 Solingen, Germany" Type "Manufacturer" Code "M0018"    
+ZADD Type "1" "CompanyA_Hub:Company"
+EXEC
+MULTI
+HMSET CompanyBC_Hub:Company  name "Flohr Industrietechnik GmbH" Product "Hub_B Hub_C" headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "79761 Waldshut-Tiengen, Germany" Type "Manufacturer"  Code "M0019"   
+ZADD Type "2" "CompanyBC_Hub:Company"
+EXEC
+
+MULTI
+HMSET CompanyA_TireA:Company  name "Renault Retail Group Deutschland GmbH, Haupt NL Köln" Product "Tier_A" headquarters "Germany"  employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "50939 Cologne, Germany"  Type "Manufacturer" Code "M0020"    
+ZADD Type "1" "CompanyA_TireA:Company"
+EXEC
+MULTI
+HMSET CompanyA_TireB:Company  name "Top Autoteile EDV & Kommunikationsservice GmbH" Product "Tier_B"  headquarters "Germany" employees 500 factories 20 revenue 221.5  production 50000 sales 49800 Address "12459 Berlin, Germany"  Type "Manufacturer"  Code "M0021"   
+ZADD Type "2" "CompanyA_TireB:Company"
+EXEC
+MULTI
+HMSET CompanyA_TireC:Company  name "a.m.s. autoland Autoteile-Markt und Auto-Service GmbH" Product "Tire_B" headquarters "Germany"  employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "54292 Trier, Germany"  Type "Manufacturer" Code "M0022"    
+ZADD Type "3" "CompanyA_TireC:Company"
+EXEC
+MULTI
+HMSET CompanyB_TireA:Company  name "A.T.U Auto-Teile-Unger GmbH & Co. KG" Product "Tier_A"  headquarters "Germany" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "92637 Weiden, Germany" Type "Manufacturer" Code "M0023"  
+ZADD Type "1" "CompanyB_TireA:Company"
+EXEC
+MULTI
+HMSET CompanyB_TireB:Company  name "ad Auto Dienst Nemec Kfz-Werkstätte Martin Nemec" Product "Tier_B"  headquarters "Austria" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "1160 Vienna, Austria" Type "Manufacturer"  Code "M0024"     
+ZADD Type "2" "CompanyB_TireB:Company"
+EXEC
+MULTI
+HMSET CompanyB_TireC:Company name "Adam Touring GmbH" Product "Tier_C" headquarters "Switzerland" employees 500 factories 20 revenue 221.5 production 50000 sales 49800 Address "8953 Dietikon, Switzerland" Type "Manufacturer" Code "M0025"  
+ZADD Type "3" "CompanyB_TireC:Company"
+EXEC
+
+MULTI
+HMSET CompanyA_Engine:Company  name "Company A  Engines"   "Headquarters"  "Germany"   "Employees"  500 "Factories" 20  "Revenue" 221.5  "Production"  50000 "Sales" 49800   
+ZADD Type "1" "CompanyA_Engine:Company"
+EXEC
+MULTI
+HMSET CompanyA_GearBox:Company  name "Company A  Gear Box"   "Headquarters"  "Germany"   "Employees"  500 "Factories" 20  "Revenue" 221.5  "Production"  50000 "Sales" 49800   
+ZADD Type "1" "CompanyA_GearBox:Company"
+EXEC
+
+keys *

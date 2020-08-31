@@ -1,0 +1,48 @@
+CREATE (Inception:Movie {title:"Inception", released:2010})
+CREATE (Leonardo:Person {"Name":"Leonardo DiCaprio", born:1974})
+CREATE (Ellen:Person {"Name":"Ellen Page", born:1987})
+CREATE
+(Leonardo)-{:ACTED_IN {roles:{"Leo"}}}->(Inception),
+(Ellen)-{:ACTED_IN {roles:{"Page"}}}->(Inception),
+(Nolan)-{:DIRECTED}->(Inception)
+
+
+CREATE (DarkKnight:Movie {title:"The Dark Knight", released:2008})
+CREATE (Bale:Person {"Name":"Christian Bale", born:1974})
+CREATE (Ledger:Person {"Name":"Heath Ledger", born:1968})
+CREATE (Eckhart:Person {"Name":"Aaron Eckhart", born:1975})
+CREATE
+(ChristianBale)-{:ACTED_IN {roles:{"Bale"}}}->(DarkKnight),
+(HeathLedger)-{:ACTED_IN {roles:{"Ledger"}}}->(DarkKnight),
+(AaronEckhart)-{:ACTED_IN {roles:{"Eckhart"}}}->(DarkKnight),
+(ChristopherNolan)-{:DIRECTED}->(DarkKnight)
+
+CREATE (Titanic:Movie {title:"Titanic", released:1997})
+CREATE (DiCaprio:Person {"Name":"Leonardo DiCaprio", born:1974})
+CREATE (Winslet:Person {"Name":"Kate Winslet", born:1975})
+CREATE (Zane:Person {"Name":"Billy Zane", born:1966})
+CREATE
+(DiCaprio)-{:ACTED_IN {roles:{"Leonardo"}}}->(Titanic),
+(KateWinslet)-{:ACTED_IN {roles:{"Winslet"}}}->(Titanic),
+(BillyZane)-{:ACTED_IN {roles:{"Zane"}}}->(Titanic),
+(JamesCameron)-{:DIRECTED}->(Titanic)
+
+
+CREATE (PaulBlythe:Person {"Name":"Paul Blythe"})
+CREATE (AngelaScope:Person {"Name":"Angela Scope"})
+CREATE (JessicaThompson:Person {"Name":"Jessica Thompson"})
+CREATE (JamesThompson:Person {"Name":"James Thompson"})
+
+CREATE
+(JamesThompson)-{:FOLLOWS}->(JessicaThompson),
+(AngelaScope)-{:FOLLOWS}->(JessicaThompson),
+(PaulBlythe)-{:FOLLOWS}->(AngelaScope)
+
+CREATE
+(JessicaThompson)-{:REVIEWED {summary:"An amazing journey", rating:78}}->(Titanic),
+(JessicaThompson)-{:REVIEWED {summary:"Silly, but fun", rating:90}}->(DarkKnight),
+(JamesThompson)-{:REVIEWED {summary:"The coolest football movie ever", rating:88}}->(Inception),
+(AngelaScope)-{:REVIEWED {summary:"Pretty funny at times", rating:77}}->(Titanic),
+(JessicaThompson)-{:REVIEWED {summary:"You had me at Jerry", rating:92}}->(DarkKnight)
+
+MATCH (Inception {title: "Inception"})<-{:ACTED_IN}-(roles) RETURN roles.name
